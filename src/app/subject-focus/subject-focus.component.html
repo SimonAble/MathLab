@@ -1,0 +1,22 @@
+
+<div class="row p-0 m-0 contain">
+  <div class="col-12 mx-auto mx-3 subjectContain p-0 m-3">
+    <!-- Subject Tabs -->
+    <div class="row p-0 m-0 subjectNavigation">
+      <div [ngClass]="{selected: conceptSelected}" class="col text-center subjectTab conceptTab" (click)="selectionTypeChange(1)"><i class="far fa-lightbulb mr-2"></i>Concept</div>
+      <div [ngClass]="{selected: historySelected}" class="col text-center subjectTab historyTab" (click)="selectionTypeChange(2)"><i class="fas fa-hourglass-half mr-2"></i>History</div>
+      <div [ngClass]="{selected: applicationSelected}" class="col text-center subjectTab applicationTab" (click)="selectionTypeChange(3)"><i class="fas fa-calculator mr-2"></i>Application</div>
+      <div [ngClass]="{selected: practiceSelected}" class="col text-center subjectTab practiceTab" (click)="selectionTypeChange(4)"><i class="far fa-edit mr-2"></i>Practice</div>
+    </div>
+
+    <!-- Dynamic Loading for Subject Tabs -->
+    <div class="tabContain pt-5 pb-3">
+      <i class="fas fa-chevron-left leftArrowIcon pl-3" (click)="cycleLeft()"></i>
+      <i class="fas fa-chevron-right rightArrowIcon pr-3" (click)="cycleRight()"></i>
+      <app-concept-view *ngIf="conceptSelected"></app-concept-view>
+      <app-history-view *ngIf="historySelected"></app-history-view>
+      <app-application-view *ngIf="applicationSelected"></app-application-view>
+      <app-practice-view *ngIf="practiceSelected"></app-practice-view>
+    </div>
+  </div>
+</div>

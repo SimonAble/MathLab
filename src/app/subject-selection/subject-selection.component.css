@@ -1,0 +1,37 @@
+.subjectSelectionContainer {
+  height:100vh;
+  background-color: rgb(37, 38, 39);
+  padding-top: 20em;
+  padding-bottom: 6em;
+}
+
+.subject {
+  background-color: white;
+  border-radius: 50%;
+  border:8px solid rgb(22, 103, 168);
+  width:300px;
+  top:300px;
+  height:300px;
+  transition: .5s;
+}
+
+.subjectIcon {
+  margin-top: .8em;
+  margin-bottom: 1rem;
+  font-size: 100px;
+}
+
+.subjectText {
+  font-size: 40px;
+}
+
+.subject:hover {
+  background-color: rgb(22, 103, 168);
+  color: white;
+  border:8px solid white;
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+.topMenuContainer {
+  background-color: var(--nav-bar);
+  height:5em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+h1 {
+  color: var(--star-white);
+  font-size: 30px !important;
+  margin-top: 20px;
+}

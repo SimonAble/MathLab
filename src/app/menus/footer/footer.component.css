@@ -1,0 +1,8 @@
+.footerContainer {
+  background-color: var(--menu-break);
+  height:5em;
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+}

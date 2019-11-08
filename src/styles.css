@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /* Blue */
+  --black-blue: rgb(1, 24, 38);
+  --dark-blue: rgb(3, 48, 87);
+  --medium-blue: rgb(13, 76, 115);
+  --light-blue: rgb(41, 118, 166);
+  --lighter-blue: rgb(41, 118, 166);
+  --lightest-blue:rgb(235, 243, 252);
+
+  /* Grey */
+  --dark-grey: rgb(42, 43, 46);
+  --medium-grey: rgb(132, 146, 165);
+  --lighter-grey: rgb(231, 234, 238);
+  --light-grey: rgb(191, 191, 206);
+
+  /* white */
+  --star-white: rgb(255, 255, 246);
+  --main-background: white;
+
+  /* Green */
+  --active-green: #5BA28B;
+
+  /* Yellow */
+  --background-yellow: rgb(255, 255, 210);
+
+  /* Purple */
+  --light-purple: rgb(211, 207, 230);
+  --purple-background: rgb(38, 33, 49);
+
+  /* Component Types */
+  --nav-bar: var(--dark-blue);
+  --menu-break: var(--light-blue);
+  --nav-bar-highlight: linear-gradient(to right, red , yellow);
+
+}
+
+html,body {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+p {
+  font-size: 22px;
+}
+
+h1 {
+  color: var(--medium-blue) ;
+  font-size: 44px !important;
+  font-weight: 400;
+}
+h2 {
+  color: var(--light-blue) ;
+  font-size: 34px !important;
+  font-weight: 400;
+}
+h3 {
+  color: var(--light-blue) ;
+  font-size: 32px !important;
+  font-weight: 400;
+}
+h4 {
+  color: var(--light-blue) ;
+  font-size: 32px !important;
+  font-weight: 400;
+}
+h5 {
+  color: var(--light-blue) ;
+  font-size: 32px !important;
+  font-weight: 400;
+}
+h6 {
+  color: var(--light-blue) ;
+  font-size: 32px !important;
+  font-weight: 400;
+}
+

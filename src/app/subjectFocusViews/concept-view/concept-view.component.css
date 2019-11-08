@@ -1,0 +1,21 @@
+.conceptContain {
+  height:88%;
+  background-color: var(--lightest-blue);
+  border-radius: 4px;
+}
+
+.concept {
+  min-height:300px;
+}
+
+.conceptHead{
+  border-bottom: 4px solid var(--light-grey);
+}
+
+.conceptFormula{
+  font-size: 46px !important;
+}
+
+.conceptExplanation {
+
+}

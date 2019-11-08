@@ -1,0 +1,6 @@
+.rightMenuContainer{
+  height:100vh;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  border-left:3px solid rgb(22, 103, 168);
+}

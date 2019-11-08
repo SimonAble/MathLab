@@ -1,0 +1,85 @@
+
+.contain {
+  margin-top: 4em !important;
+  padding: 20px !important;
+}
+
+.subjectContain {
+  background-color: white;
+  height:86vh;
+  border-radius: .2rem;
+}
+
+.subjectNavigation {
+  line-height: 4em;
+  border-bottom:8px solid var(--black-blue);
+  /* border-radius: .15rem; */
+}
+
+.subjectTab {
+  font-size: 24px;
+  color: var(--medium-blue);
+  background-color: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.subjectTab:hover {
+  font-size: 24px;
+  color: var(--star-white);
+  background-color: var(--light-blue);
+}
+
+.conceptTab {
+  border-right:1px solid var(--light-grey);
+  border-top-left-radius: .2rem;
+}
+
+.historyTab {
+  border-right:1px solid var(--light-grey);
+}
+
+.applicationTab {
+  border-right:1px solid var(--light-grey);
+}
+
+.practiceTab{
+  border-top-right-radius: .2rem;
+}
+
+i {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.tabContain {
+  padding-left: 5em;
+  padding-right: 5em;
+  height:100%;
+}
+
+.selected {
+  font-size: 24px;
+  color: var(--star-white);
+  background-color: var(--light-blue);
+}
+
+.leftArrowIcon {
+  position: absolute;
+  left:0px;
+  top: 50%;
+  font-size: 50px;
+  color: var(--medium-grey);
+  transition: .5s;
+}
+.rightArrowIcon {
+  position: absolute;
+  right:0px;
+  top: 50%;
+  font-size: 50px;
+  color: var(--medium-grey);
+  transition: .5s;
+}
+
+.leftArrowIcon:hover, .rightArrowIcon:hover {
+  color: var(--active-green);
+}
