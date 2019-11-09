@@ -14,6 +14,8 @@ import { ConceptViewComponent } from './subjectFocusViews/concept-view/concept-v
 import { HistoryViewComponent } from './subjectFocusViews/history-view/history-view.component';
 import { ApplicationViewComponent } from './subjectFocusViews/application-view/application-view.component';
 import { PracticeViewComponent } from './subjectFocusViews/practice-view/practice-view.component';
+import { ResourcesViewComponent } from './subjectFocusViews/resources-view/resources-view.component';
+import { DiscussionViewComponent } from './subjectFocusViews/discussion-view/discussion-view.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { PracticeViewComponent } from './subjectFocusViews/practice-view/practic
     ConceptViewComponent,
     HistoryViewComponent,
     ApplicationViewComponent,
-    PracticeViewComponent
+    PracticeViewComponent,
+    ResourcesViewComponent,
+    DiscussionViewComponent
   ],
   imports: [
     BrowserModule,

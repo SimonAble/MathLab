@@ -29,20 +29,16 @@
   background-color: var(--light-blue);
 }
 
-.conceptTab {
+.firstTab{
   border-right:1px solid var(--light-grey);
   border-top-left-radius: .2rem;
 }
 
-.historyTab {
+.tab{
   border-right:1px solid var(--light-grey);
 }
 
-.applicationTab {
-  border-right:1px solid var(--light-grey);
-}
-
-.practiceTab{
+.lastTab{
   border-top-right-radius: .2rem;
 }
 

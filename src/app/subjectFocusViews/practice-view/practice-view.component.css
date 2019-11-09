@@ -1,0 +1,18 @@
+.practiceHead {
+  border-bottom: 4px solid var(--light-grey);
+}
+
+.question {
+  height:230px;
+}
+
+.questionDepiction{
+
+}
+.answerInput {
+  height:80px;
+  width:80%;
+  margin: auto;
+  border: 3px solid var(--light-grey);
+  border-radius: 6px;
+}

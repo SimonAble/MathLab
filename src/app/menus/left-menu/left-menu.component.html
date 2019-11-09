@@ -1,25 +1,19 @@
 <div *ngIf="leftMenuOpen" class="leftMenuContainer m-0 p-0">
   <div class="row w-100 pb-2 p-0 m-0 primaryConcept">
     <div class="col-9 text-center mt-3">
-      <h2 class="nav-text"><i class="fas fa-square-root-alt mr-3"></i>Foundations</h2>
+      <h2 class="nav-text"><i class="{{leftMenuItems.coreConceptIcon}} mr-3"></i>{{leftMenuItems.coreConcept}}</h2>
     </div>
     <div class="col-3 text-right mt-2 m-0 p-0">
       <button (click)="toggleLeftMenu(true)" class="toggleButton"><i class="fas fa-angle-double-left toggle"></i></button>
     </div>
     <div class="navItems w-100">
-      <div class="navItem align-center" [ngClass]="{activeItem: activeItem}">
-        <span *ngIf="!sectionComplete"><i class="far fa-circle circleIcon"></i></span>
-        <span *ngIf="sectionComplete"><i class="far fa-check-circle circleIcon"></i></span>
-        Whole Numbers
-      </div>
-      <div class="navItem align-center">
-          <i class="far fa-circle circleIcon"></i>Whole Numbers
-      </div>
-      <div class="navItem align-center">
-          <i class="far fa-circle circleIcon"></i>Whole Numbers
-      </div>
-      <div class="navItem align-center">
-          <i class="far fa-circle circleIcon"></i>Whole Numbers
+      <!--Left Menu Items-->
+      <div *ngFor="let item of leftMenuItems.leftmenuitems">
+          <div class="navItem align-center" [ngClass]="{activeItem: item.itemActive}">
+            <span *ngIf="!item.sectionComplete"><i class="far fa-circle circleIcon"></i></span>
+            <span *ngIf="item.sectionComplete"><i class="far fa-check-circle circleIcon"></i></span>
+            {{item.itemText}}
+          </div>
       </div>
     </div>
   </div>
@@ -28,6 +22,9 @@
 
 <div *ngIf="!leftMenuOpen" class="leftMenuContainer m-0 p-0">
   <div class="row w-100 pb-2 p-0 m-0 primaryConcept">
+    <div class="text-center mt-3">
+        <h2 class="nav-text"><i class="{{leftMenuItems.coreConceptIcon}} mr-3"></i></h2>
+      </div>
     <div class="text-right mt-2 m-0 p-0">
       <button (click)="toggleLeftMenu(false)" class="toggleButton"><i class="fas fa-angle-double-right toggle"></i></button>
     </div>
