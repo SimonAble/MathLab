@@ -9,11 +9,23 @@
     <div class="navItems w-100">
       <!--Left Menu Items-->
       <div *ngFor="let item of leftMenuItems.leftmenuitems">
-          <div class="navItem align-center" [ngClass]="{activeItem: item.itemActive}">
-            <span *ngIf="!item.sectionComplete"><i class="far fa-circle circleIcon"></i></span>
-            <span *ngIf="item.sectionComplete"><i class="far fa-check-circle circleIcon"></i></span>
-            {{item.itemText}}
+          <div class="navItem align-center" [ngClass]="{activeItem: item.itemActive}" (click)="navItemClicked(item.itemOrder)">
+            <div class="row p-0 m-0">
+                <div class="col-2 p-0 m-0">
+                  <span *ngIf="!item.sectionComplete"><i class="far fa-circle circleIcon"></i></span>
+                  <span *ngIf="item.sectionComplete"><i class="far fa-check-circle circleIcon"></i></span>
+                </div>
+                <div class="col-10">
+                  {{item.itemText}}
+                </div>
+            </div>
+
           </div>
+      </div>
+      <!--Back to Subject selection-->
+      <div class="align-center subjectSelection" (click)="backToSubjectSelection()">
+        <i class="fas fa-arrow-circle-left circleIcon"></i>
+        Subject Selection
       </div>
     </div>
   </div>

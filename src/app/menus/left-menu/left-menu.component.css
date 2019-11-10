@@ -69,3 +69,20 @@
   color: var(--star-white);
   border: none;
 }
+
+.subjectSelection{
+  position: absolute;
+  bottom:0px;
+  border-top: 8px solid var(--black-blue);
+  border-bottom: 22px solid var(--black-blue);
+  width:100%;
+  color: var(--dark-grey);
+  font-size: 22px;
+  padding: 16px 0px 16px 20px;
+  height:92px;
+}
+
+.subjectSelection:hover {
+  background-image: linear-gradient(to right, var(--dark-blue) , var(--light-blue));
+  color: var(--star-white);
+}

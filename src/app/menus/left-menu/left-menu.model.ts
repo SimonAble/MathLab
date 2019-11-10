@@ -14,10 +14,12 @@ export class leftMenuItem {
   sectionComplete: boolean;
   itemText: string;
   itemActive: boolean;
+  itemOrder: number;
 
-  constructor(itemText: string, sectionComplete: boolean, itemActive: boolean) {
+  constructor(itemOrder: number, itemText: string, sectionComplete: boolean, itemActive: boolean) {
     this.sectionComplete = sectionComplete;
     this.itemText = itemText;
     this.itemActive = itemActive;
+    this.itemOrder = itemOrder;
   }
 }
