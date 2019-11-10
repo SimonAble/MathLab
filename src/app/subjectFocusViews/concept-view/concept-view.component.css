@@ -1,6 +1,6 @@
 .conceptContain {
   height:88%;
-  background-color: var(--lightest-blue);
+  background-color: var(--main-background);
   border-radius: 4px;
 }
 
@@ -9,13 +9,25 @@
 }
 
 .conceptHead{
-  border-bottom: 4px solid var(--light-grey);
+  /* border-bottom: 4px solid var(--light-grey); */
 }
 
 .conceptFormula{
-  font-size: 46px !important;
+  background-color: var(--lightest-blue);
+  width:94%;
 }
 
-.conceptExplanation {
+.formulaText{
+  font-size: 50px !important;
+}
 
+.circle {
+  min-height:50px;
+  width: 50px;
+  background-color:rgb(216, 57, 57);
+  border-radius: 50%;
+}
+
+.circle-contain {
+  display: inline;
 }

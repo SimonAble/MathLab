@@ -24,9 +24,15 @@
 
     <div class="row concept mb-3">
         <div class="col">
-            <h1 class="py-3 mb-4 conceptHead text-center">Counting Numbers</h1>
-            <h2 class="pt-5 pb-3 text-center conceptFormula">1, 2, 3, 4, 5, ...</h2>
-            <p class="conceptExplanation p-5">Even though counting is first taught at a young age, mastering mathematics, which is the study of numbers, requires  constant attention. If it has been a while since you have studied math, it can be helpful to review basic topics. In  this chapter, we will focus on numbers used for counting as well as four arithmetic operations—addition, subtraction,  multiplication, and division. We will also discuss some vocabulary that we will use throughout this book.</p>
+            <h1 class="py-3 mb-4 conceptHead text-center">{{conceptModel.conceptHeading}}</h1>
+            <div class="conceptFormula mx-auto p-4">
+              <h2 class="text-center formulaText">{{conceptModel.conceptFormula}}</h2>
+            </div>
+            <div *ngFor="let paragraph of conceptModel.conceptParagraphs">
+                <img *ngIf="paragraph.paragraphImg" src="paragraph.paragraphImg" alt="paragraph.paragraphAlt">
+                <p class="conceptExplanation p-5">{{paragraph.paragraphText}}</p>
+            </div>
+
         </div>
     </div>
 </div>
