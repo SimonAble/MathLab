@@ -7,6 +7,7 @@ import { HistoryViewModel, HistorySection, SectionParagraph } from './history-vi
 })
 export class HistoryViewComponent implements OnInit {
 
+  //Todo - Get From Subject JSON
   public historyViewModel = new HistoryViewModel(
     [
       new HistorySection(
@@ -15,7 +16,7 @@ export class HistoryViewComponent implements OnInit {
         'fas fa-lightbulb',
         [
           new SectionParagraph(
-            'Even though counting is first taught at a young age, mastering mathematics, which is the study of numbers, requires constant attention. If it has been a while since you have studied math, it can be helpful to review basic topics. In this chapter, we will focus on numbers used for counting as well as four arithmetic operations—addition, subtraction, multiplication, and division. We will also discuss some vocabulary that we will use throughout this book.'
+            'Even though counting is first taught at a young age, mastering mathematics, which is the study of numbers, requires constant attention. If it has been a while since you have studied math, it can be helpful to review <strong class="green">basic topics</strong>. In this chapter, we will focus on numbers used for counting as well as four arithmetic operations—addition, subtraction, multiplication, and division. We will also discuss some vocabulary that we will use throughout this book.'
           ),
           new SectionParagraph(
             'Even though counting is first taught at a young age, mastering mathematics, which is the study of numbers, requires  constant attention. If it has been a while since you have studied math, it can be helpful to review basic topics. In  this chapter, we will focus on numbers used for counting as well as four arithmetic operations—addition, subtraction,  multiplication, and division. We will also discuss some vocabulary that we will use throughout this book.',

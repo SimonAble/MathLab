@@ -8,17 +8,17 @@
   min-height:300px;
 }
 
-.conceptHead{
-  /* border-bottom: 4px solid var(--light-grey); */
-}
-
 .conceptFormula{
-  background-color: var(--lightest-blue);
+  background-color: var(--dark-grey);
   width:94%;
+  border: 6px solid var(--light-grey);
+  height:300px;
 }
 
 .formulaText{
   font-size: 50px !important;
+  color:white;
+  font-weight: 300;
 }
 
 .circle {

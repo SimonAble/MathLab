@@ -1,0 +1,55 @@
+.applicationViewContain {
+  height:88%;
+  background-color: var(--main-background);
+  border-radius: 4px;
+}
+
+.applicationContain {
+  height:240px;
+  padding: 10px 10px;
+  width:100%;
+  display: inline-block;
+}
+
+.application {
+  height:100%;
+  width:100%;
+  border-radius: 4px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.application img{
+  border-top: 2px solid var(--purple-background);
+  max-width: 100%;
+  transition: .3s;
+}
+
+.applicationText {
+  color:white;
+  font-weight: 300;
+  font-size: 30px !important;
+  text-align: center;
+  background-color: var(--purple-background);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  transition: .3s;
+}
+
+.applicationText:hover {
+  font-size: 32px;
+  transition: .2s;
+  background-color: var(--purple-hovered);
+}
+
+.application:hover .applicationText{
+  font-size: 32px;
+  transition: .2s;
+  background-color: var(--purple-hovered);
+}
+
+.application:hover img{
+  filter:contrast(130%);
+  filter:brightness(110%);
+  border-top: 2px solid var(--purple-hovered);
+}

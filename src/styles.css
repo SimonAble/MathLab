@@ -26,23 +26,36 @@
 
   /* Purple */
   --light-purple: rgb(211, 207, 230);
-  --purple-background: rgb(38, 33, 49);
+  --purple-background: rgb(58, 42, 94);
+  --purple-hovered: rgb(79, 60, 124);;
 
   /* Component Types */
   --nav-bar: var(--dark-blue);
   --menu-break: var(--light-blue);
   --nav-bar-highlight: linear-gradient(to right, red , yellow);
 
+  /* Text Colors */
+  --red: rgb(209, 46, 46);
+  --orange: rgb(233, 125, 24);
+  --yellow: rgb(245, 229, 82);
+  --green: rgb(56, 155, 56);
+  --blue: rgb(19, 38, 145);
+  --purple: rgb(83, 41, 95);
+  --grey: rgb(81, 81, 87);
 }
 
+/* Base Browser Reset */
 html,body {
   height:100%;
   margin:0;
   padding:0;
 }
 
+/* Default Text Styling */
+
 p {
-  font-size: 22px;
+  font-size: 23px;
+  color: var(--grey);
 }
 
 h1 {
@@ -76,3 +89,35 @@ h6 {
   font-weight: 400;
 }
 
+/* Text Color Classes */
+.red {
+  color: var(--red);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.green {
+  color: var(--green);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+/* Bootstrap Modal Patch */
+.modal {
+  width:800px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

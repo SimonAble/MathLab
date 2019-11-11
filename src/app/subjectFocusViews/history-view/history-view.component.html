@@ -13,7 +13,7 @@
             <div class="px-2 py-3 w-100">
                 <h2 class="pb-2 ml-5">{{ section.sectionSubheader }}</h2>
                 <div *ngFor="let paragraph of section.sectionParagraphs">
-                  <p class="pl-5">{{ paragraph.paragraphText }}</p>
+                  <p class="pl-5" [innerHTML]="paragraph.paragraphText"></p>
                   <div *ngIf="paragraph.paragraphImg" class="text-center">
                       <img class="ml-5 my-3 historyImg" src="{{paragraph.paragraphImg}}" alt="{{paragraph.imgAlt}}">
                   </div>

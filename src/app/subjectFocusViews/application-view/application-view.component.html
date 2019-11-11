@@ -1,3 +1,29 @@
-<p>
-  application-view works!
-</p>
+<!-- <div class="applicationContain overflow-auto">
+    <div class="row concept mb-3">
+        <div class="col">
+            <h1 class="py-3 mb-4 conceptHead text-center">{{applicationModel.applicationHeading}}</h1>
+        </div>
+    </div>
+    <div *ngFor="let application of applicationModel.applications" class="row">
+        <div class="col-6">
+
+        </div>
+    </div>
+</div> -->
+
+
+<div class="applicationViewContain overflow-auto">
+    <div class="row concept mb-3 w-100">
+        <div class="col">
+            <h1 class="py-3 mb-4 conceptHead text-center">{{applicationModel.applicationHeading}}</h1>
+        </div>
+    </div>
+    <div class="p-0 m-0 w-100 col-12" >
+        <div *ngFor="let application of applicationModel.applications" class="col-md-4 applicationContain m-0">
+          <div class="application h-100 w-100" (click)="openDialog(application.applicationId)">
+            <h3 class="applicationText py-2 m-0">{{application.applicationText}}</h3>
+            <img src="{{application.applicationBackground}}" alt="">
+          </div>
+        </div>
+    </div>
+</div>
