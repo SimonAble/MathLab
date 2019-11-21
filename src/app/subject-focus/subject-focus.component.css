@@ -79,3 +79,7 @@ i {
 .leftArrowIcon:hover, .rightArrowIcon:hover {
   color: var(--active-green);
 }
+
+.disabled {
+  color: var(--light-grey);
+}

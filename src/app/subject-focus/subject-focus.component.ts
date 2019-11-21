@@ -13,12 +13,12 @@ export class SubjectFocusComponent implements OnInit {
 
   public subjectTabs = new SubjectTabs(
     [
-      new SubjectTabModel(0, false, 'Concept', 'far fa-lightbulb', 'firstTab', 5, 1),
-      new SubjectTabModel(1, false, 'History', 'fas fa-hourglass-half', 'tab', 0, 2),
-      new SubjectTabModel(2, true, 'Application', 'fas fa-calculator', 'tab', 1, 3),
-      new SubjectTabModel(3, false, 'Practice', 'far fa-edit', 'tab', 2, 4),
-      new SubjectTabModel(4, false, 'Discussion', 'far fa-comments', 'tab', 3, 5),
-      new SubjectTabModel(5, false, 'Resources', 'fas fa-book', 'lastTab', 4, 0)
+      new SubjectTabModel(0, false, false, 'Concept', 'far fa-lightbulb', 'firstTab', 5, 1),
+      new SubjectTabModel(1, false, false, 'History', 'fas fa-hourglass-half', 'tab', 0, 2),
+      new SubjectTabModel(2, false, false, 'Application', 'fas fa-calculator', 'tab', 1, 3),
+      new SubjectTabModel(3, true, false, 'Practice', 'far fa-edit', 'tab', 2, 4),
+      new SubjectTabModel(4, false, true, 'Discussion', 'far fa-comments', 'tab', 3, 5),
+      new SubjectTabModel(5, false, true, 'Resources', 'fas fa-book', 'lastTab', 4, 0)
     ]
   );
 

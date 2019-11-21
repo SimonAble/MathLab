@@ -27,6 +27,7 @@ import { PracticeViewComponent } from './subjectFocusViews/practice-view/practic
 import { ResourcesViewComponent } from './subjectFocusViews/resources-view/resources-view.component';
 import { DiscussionViewComponent } from './subjectFocusViews/discussion-view/discussion-view.component';
 import { ApplicationModalComponent } from './subjectFocusViews/application-view/application-modal/application-modal.component';
+import { DisabledSubjectComponent } from './subjectFocusViews/disabled-subject/disabled-subject.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ApplicationModalComponent } from './subjectFocusViews/application-view/
     PracticeViewComponent,
     ResourcesViewComponent,
     DiscussionViewComponent,
-    ApplicationModalComponent
+    ApplicationModalComponent,
+    DisabledSubjectComponent
   ],
   imports: [
     BrowserModule,

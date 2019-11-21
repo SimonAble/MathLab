@@ -1,18 +1,47 @@
+.practiceContain {
+  height:100%;
+  width:100%;
+}
+
+.practiceView {
+  height:12%;
+}
+
 .practiceHead {
   border-bottom: 4px solid var(--light-grey);
 }
 
+.answerContain {
+  height:64%;
+}
 .question {
   height:230px;
 }
 
-.questionDepiction{
-
-}
-.answerInput {
-  height:80px;
-  width:80%;
+.answerContain {
+  min-height:300px;
+  width:100%;
   margin: auto;
   border: 3px solid var(--light-grey);
-  border-radius: 6px;
+}
+
+input[type=text] {
+  border: 4px solid var(--light-grey);
+  height:90px;
+  font-size: 30px;
+  color: var(--dark-grey);
+  text-align: center;
+  width:100%;
+}
+
+.checkAnswerBtn{
+  width:50%;
+  margin:30px auto;
+  height:40px;
+}
+
+.actionContain {
+  height:16%;
+}
+.practiceActions {
 }
