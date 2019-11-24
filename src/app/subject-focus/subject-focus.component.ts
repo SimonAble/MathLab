@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { SubjectTypeCode } from './subjectEnum';
 import { SubjectTabModel, SubjectTabs } from './subjectTab.model';
+import { NavigationService } from '../shared/navigation.service';
 
 @Component({
   selector: 'app-subject-focus',
@@ -8,6 +9,8 @@ import { SubjectTabModel, SubjectTabs } from './subjectTab.model';
   styleUrls: ['./subject-focus.component.css']
 })
 export class SubjectFocusComponent implements OnInit {
+  @Output() leftMenuToggled = new EventEmitter<boolean>();
+  leftMenuVisible = true;
 
   public selectedTab: number;
 
@@ -22,10 +25,24 @@ export class SubjectFocusComponent implements OnInit {
     ]
   );
 
-  constructor() { }
+  constructor(
+    private navigationService: NavigationService
+  ) {
+    this.navigationService.setLeftMenuVisibility(false);
+  }
 
   ngOnInit() {
     this.getActiveTab();
+  }
+
+  toggleLeftMenu() {
+    console.log(`Toggling Left Menu: ${this.leftMenuVisible}`);
+    if(this.leftMenuVisible == true) {
+      this.leftMenuVisible = false;
+    }
+    else if (this.leftMenuVisible == false){
+      this.leftMenuVisible = true;
+    }
   }
 
   getActiveTab() {

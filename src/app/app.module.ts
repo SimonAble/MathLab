@@ -28,6 +28,7 @@ import { ResourcesViewComponent } from './subjectFocusViews/resources-view/resou
 import { DiscussionViewComponent } from './subjectFocusViews/discussion-view/discussion-view.component';
 import { ApplicationModalComponent } from './subjectFocusViews/application-view/application-modal/application-modal.component';
 import { DisabledSubjectComponent } from './subjectFocusViews/disabled-subject/disabled-subject.component';
+import { NavigationService } from './shared/navigation.service';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,9 @@ import { DisabledSubjectComponent } from './subjectFocusViews/disabled-subject/d
   entryComponents: [
     ApplicationModalComponent
   ],
-  providers: [],
+  providers: [
+    NavigationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

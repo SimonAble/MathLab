@@ -1,9 +1,8 @@
 .leftMenuContainer{
-  height:80vh;
+  height:100%;
   width:100%;
   background-color: var(--main-background);
   /* border-right:4px solid var(--menu-break); */
-  margin-top: 5rem !important;
 }
 
 .toggleButton {
@@ -35,9 +34,10 @@
 
 .primaryConcept {
   background-color: var(--main-background);
-  border-top: 20px solid var(--black-blue);
   border-bottom: 8px solid var(--black-blue);
-  height:92px;
+  height:73px;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
 }
 
 .navItems{
@@ -71,18 +71,17 @@
 }
 
 .subjectSelection{
-  position: absolute;
-  bottom:0px;
   border-top: 8px solid var(--black-blue);
-  border-bottom: 22px solid var(--black-blue);
-  width:100%;
+  width:280px;
   color: var(--dark-grey);
   font-size: 22px;
-  padding: 16px 0px 16px 20px;
-  height:92px;
+  padding: 15px 0px;
+  position: absolute;
+  left:0px;
+  bottom:25px;
 }
 
 .subjectSelection:hover {
-  background-image: linear-gradient(to right, var(--dark-blue) , var(--light-blue));
+  background-image: linear-gradient(to right, var(--purple-background) , var(--medium-purple));
   color: var(--star-white);
 }

@@ -2,10 +2,4 @@
   background-color: var(--black-blue);
 }
 
-.collapsed {
-  width:60px !important;
-}
 
-.expanded {
-  width:280px;
-}

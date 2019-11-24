@@ -26,8 +26,9 @@
 
   /* Purple */
   --light-purple: rgb(211, 207, 230);
-  --purple-background: rgb(58, 42, 94);
-  --purple-hovered: rgb(79, 60, 124);;
+  --medium-purple: rgb(117, 92, 172);
+  --purple-background: rgb(44, 31, 75);
+  --purple-hovered: rgb(79, 60, 124);
 
   /* Component Types */
   --nav-bar: var(--dark-blue);

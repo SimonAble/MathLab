@@ -1,26 +1,35 @@
+<div class="row m-0 p-0">
+  <div class="m-0 p-0 leftMenuContain" *ngIf="leftMenuVisible">
+    <app-left-menu (leftMenuToggled)="toggleLeftMenu()"></app-left-menu>
+  </div>
+  <div class="col m-0 p-0">
+      <div class="row p-0 m-0 contain">
+          <div class="col-12 mx-auto mx-3 subjectContain p-0">
+            <!-- Subject Tabs -->
+            <div class="row p-0 m-0 subjectNavigation">
+              <div *ngFor="let tab of subjectTabs.subjectTabs" class="col p-0 m-0">
+                  <div [ngClass]="{selected: tab.isSelected, disabled: tab.isDisabled}" class="text-center subjectTab {{tab.tabCSS}}" (click)="selectionTypeChange(tab.selectionOrder)"><i class="{{tab.icon}} mr-2"></i>{{tab.tabText}}</div>
+              </div>
+            </div>
 
-<div class="row p-0 m-0 contain">
-  <div class="col-12 mx-auto mx-3 subjectContain p-0 m-3">
-    <!-- Subject Tabs -->
-    <div class="row p-0 m-0 subjectNavigation">
-      <div *ngFor="let tab of subjectTabs.subjectTabs" class="col p-0 m-0">
-          <div [ngClass]="{selected: tab.isSelected, disabled: tab.isDisabled}" class="text-center subjectTab {{tab.tabCSS}}" (click)="selectionTypeChange(tab.selectionOrder)"><i class="{{tab.icon}} mr-2"></i>{{tab.tabText}}</div>
+            <!-- Dynamic Loading for Subject Tabs -->
+            <div class="tabContain pt-4 pb-3">
+              <i class="fas fa-chevron-left leftArrowIcon pl-2" (click)="cycleLeft(subjectTabs.subjectTabs[selectedTab].selectionOrder)"></i>
+              <i class="fas fa-bars leftMenuIcon" (click)="toggleLeftMenu()" data-toggle="tooltip" data-placement="right" title="Toggle Left Menu"></i>
+              <i class="fas fa-chevron-right rightArrowIcon pr-2" (click)="cycleRight(subjectTabs.subjectTabs[selectedTab].selectionOrder)"></i>
+              <div class="subjectView overflow-auto w-100">
+                  <app-concept-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Concept'"></app-concept-view>
+                  <app-history-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'History'"></app-history-view>
+                  <app-application-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Application'"></app-application-view>
+                  <app-practice-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Practice'"></app-practice-view>
+                  <app-discussion-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Discussion'"></app-discussion-view>
+                  <app-resources-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Resources'"></app-resources-view>
+                  <app-disabled-subject *ngIf=subjectTabs.subjectTabs[selectedTab].isDisabled></app-disabled-subject>
+              </div>
+            </div>
+          </div>
       </div>
-    </div>
-
-    <!-- Dynamic Loading for Subject Tabs -->
-    <div class="tabContain pt-5 pb-3">
-      <i class="fas fa-chevron-left leftArrowIcon pl-3" (click)="cycleLeft(subjectTabs.subjectTabs[selectedTab].selectionOrder)"></i>
-      <i class="fas fa-chevron-right rightArrowIcon pr-3" (click)="cycleRight(subjectTabs.subjectTabs[selectedTab].selectionOrder)"></i>
-
-      <app-concept-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Concept'"></app-concept-view>
-      <app-history-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'History'"></app-history-view>
-      <app-application-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Application'"></app-application-view>
-      <app-practice-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Practice'"></app-practice-view>
-      <app-discussion-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Discussion'"></app-discussion-view>
-      <app-resources-view *ngIf="subjectTabs.subjectTabs[selectedTab].isSelected && !subjectTabs.subjectTabs[selectedTab].isDisabled && subjectTabs.subjectTabs[selectedTab].tabText === 'Resources'"></app-resources-view>
-      <app-disabled-subject *ngIf=subjectTabs.subjectTabs[selectedTab].isDisabled></app-disabled-subject>
-
-    </div>
   </div>
 </div>
+
+

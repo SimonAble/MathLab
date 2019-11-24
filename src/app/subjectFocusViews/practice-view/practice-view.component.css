@@ -11,18 +11,19 @@
   border-bottom: 4px solid var(--light-grey);
 }
 
-.answerContain {
-  height:64%;
-}
-.question {
-  height:230px;
+.questionText {
+  color: var(--dark-grey);
+  font-weight: 500;
+  font-size: 24px;
 }
 
-.answerContain {
-  min-height:300px;
+.questionContain {
+  height:64%;
   width:100%;
   margin: auto;
-  border: 3px solid var(--light-grey);
+  border: 5px solid var(--light-grey);
+  background: radial-gradient(var(--lighter-grey) 2px, transparent 3px);
+  background-size : 25px 25px;
 }
 
 input[type=text] {
@@ -42,6 +43,4 @@ input[type=text] {
 
 .actionContain {
   height:16%;
-}
-.practiceActions {
 }

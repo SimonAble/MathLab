@@ -1,10 +1,10 @@
-<div *ngIf="leftMenuOpen" class="leftMenuContainer m-0 p-0">
+<div class="leftMenuContainer m-0 p-0">
   <div class="row w-100 pb-2 p-0 m-0 primaryConcept">
     <div class="col-9 text-center mt-3">
       <h2 class="nav-text"><i class="{{leftMenuItems.coreConceptIcon}} mr-3"></i>{{leftMenuItems.coreConcept}}</h2>
     </div>
     <div class="col-3 text-right mt-2 m-0 p-0">
-      <button (click)="toggleLeftMenu(true)" class="toggleButton"><i class="fas fa-angle-double-left toggle"></i></button>
+      <button (click)="toggleLeftMenu()" class="toggleButton"><i class="fas fa-angle-double-left toggle"></i></button>
     </div>
     <div class="navItems w-100">
       <!--Left Menu Items-->
@@ -23,22 +23,16 @@
           </div>
       </div>
       <!--Back to Subject selection-->
-      <div class="align-center subjectSelection" (click)="backToSubjectSelection()">
-        <i class="fas fa-arrow-circle-left circleIcon"></i>
-        Subject Selection
+      <div class="pl-4 align-center subjectSelection" (click)="backToSubjectSelection()">
+        <div class="row p-0 m-0">
+            <div class="col-2 p-0 m-0">
+                <i class="fas fa-arrow-circle-left circleIcon"></i>
+            </div>
+            <div class="col-10">
+                Subject Selection
+            </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-</div>
-
-<div *ngIf="!leftMenuOpen" class="leftMenuContainer m-0 p-0">
-  <div class="row w-100 pb-2 p-0 m-0 primaryConcept">
-    <div class="text-center mt-3">
-        <h2 class="nav-text"><i class="{{leftMenuItems.coreConceptIcon}} mr-3"></i></h2>
-      </div>
-    <div class="text-right mt-2 m-0 p-0">
-      <button (click)="toggleLeftMenu(false)" class="toggleButton"><i class="fas fa-angle-double-right toggle"></i></button>
     </div>
   </div>
 </div>

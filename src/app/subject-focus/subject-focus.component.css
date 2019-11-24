@@ -1,13 +1,21 @@
 
+.leftMenuContain {
+  margin-top: 5em !important;
+  width:280px;
+  padding-top: 20px !important;
+  height:88vh;
+}
+
 .contain {
-  margin-top: 4em !important;
-  padding: 20px !important;
+  margin-top: 5em !important;
+  padding: 20px 10px 0px 10px !important;
+  height:88vh;
 }
 
 .subjectContain {
   background-color: white;
-  height:86vh;
   border-radius: .2rem;
+  width:100%;
 }
 
 .subjectNavigation {
@@ -48,9 +56,13 @@ i {
 }
 
 .tabContain {
-  padding-left: 5em;
-  padding-right: 5em;
-  height:100%;
+  padding-left: 4.5em;
+  padding-right: 4.5em;
+  height:82%;
+}
+
+.subjectView {
+  height:600px;
 }
 
 .selected {
@@ -77,9 +89,34 @@ i {
 }
 
 .leftArrowIcon:hover, .rightArrowIcon:hover {
-  color: var(--active-green);
+  color: var(--medium-purple);
 }
 
 .disabled {
   color: var(--light-grey);
+}
+
+.leftMenuIcon {
+  background-image: linear-gradient(to right, var(--dark-blue) , var(--light-blue));
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  vertical-align: middle;
+  padding: 10px;
+  position: absolute;
+  left:10px;
+  bottom:10px;
+  color:white;
+  box-shadow: 3px 3px 4px rgb(117, 117, 117);
+  transition: .4s;
+}
+
+.leftMenuIcon:hover {
+  box-shadow: none;
+  background-image: none;
+  background-color: var(--active-green);
+  box-shadow: 2px 1px 4px rgb(117, 117, 117);
+  background-image: linear-gradient(to right, var(--purple-background) , var(--medium-purple));
 }

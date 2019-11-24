@@ -1,5 +1,5 @@
 .historyContain {
-  height:88%;
+  height:100%;
 }
 
 .history {
@@ -63,4 +63,24 @@
 .historyImg {
   width:80%;
   border-radius: 6px;
+}
+
+#sectionCompleteIcon {
+  color: var(--active-green);
+  border: 4px solid var(--active-green);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  transition: .5s;
+}
+
+#sectionComplete {
+  color: var(--active-green);
+}
+
+.completeIcon {
+  font-size: 40px !important;
+  color: var(--active-green);
+  transition: .5s;
 }

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
+import { NavigationService } from '../shared/navigation.service';
 
 @Component({
   selector: 'app-subject-selection',
@@ -8,7 +9,11 @@ import { RouterModule, Routes } from '@angular/router'
 })
 export class SubjectSelectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private navigationService: NavigationService
+  ) {
+    this.navigationService.setLeftMenuVisibility(false);
+   }
 
   ngOnInit() {
   }

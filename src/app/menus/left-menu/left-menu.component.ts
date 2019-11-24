@@ -1,11 +1,13 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { leftMenuItem, leftMenuItems } from './left-menu.model';
+import { NavigationService } from '../../shared/navigation.service';
 
 @Component({
   selector: 'app-left-menu',
   templateUrl: './left-menu.component.html',
   styleUrls: ['./left-menu.component.css']
 })
+
 export class LeftMenuComponent implements OnInit {
   @Output() leftMenuToggled = new EventEmitter<boolean>();
 
@@ -42,17 +44,8 @@ export class LeftMenuComponent implements OnInit {
     }
   }
 
-  toggleLeftMenu(event) {
-
-    if (this.leftMenuOpen === true) {
-      this.leftMenuToggled.emit(event);
-      this.leftMenuOpen = false;
-    }
-
-    else if (this.leftMenuOpen === false) {
-      this.leftMenuToggled.emit(event);
-      this.leftMenuOpen = true;
-    }
+  toggleLeftMenu() {
+    this.leftMenuToggled.emit(true);
   }
 
   navItemClicked(itemOrder) {

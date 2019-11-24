@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PracticeViewComponent implements OnInit {
 
+  public hasQuestionView: boolean = true;
+  public hasQuestionText: boolean = true;
+
   constructor() { }
 
   ngOnInit() {
