@@ -5,7 +5,7 @@
 }
 
 .applicationContain {
-  height:240px;
+  height:250px;
   padding: 10px 10px;
   width:100%;
   display: inline-block;
@@ -17,6 +17,7 @@
   border-radius: 4px;
   justify-content: center;
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 .application img{

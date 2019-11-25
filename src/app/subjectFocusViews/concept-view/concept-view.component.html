@@ -2,11 +2,11 @@
 <div class="conceptContain">
     <div class="row concept mb-3">
         <div class="col">
-            <h1 class="py-3 mb-4 conceptHead text-center">{{conceptModel.conceptHeading}}</h1>
+            <h1 class="py-3 mb-4 conceptHead text-center">{{conceptView.conceptHeading}}</h1>
             <div class="conceptFormula mx-auto p-4">
-              <div><h2 class="text-center formulaText my-auto h-100">{{conceptModel.conceptFormula}}</h2></div>
+              <div><h2 class="text-center formulaText my-auto h-100">{{conceptView.conceptFormula}}</h2></div>
             </div>
-            <div *ngFor="let paragraph of conceptModel.conceptParagraphs">
+            <div *ngFor="let paragraph of conceptView.conceptParagraphs">
                 <img *ngIf="paragraph.paragraphImg" src="paragraph.paragraphImg" alt="paragraph.paragraphAlt">
                 <p class="conceptExplanation p-5" [innerHTML]="paragraph.paragraphText"></p>
             </div>

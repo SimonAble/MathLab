@@ -30,6 +30,9 @@
   --purple-background: rgb(44, 31, 75);
   --purple-hovered: rgb(79, 60, 124);
 
+  /* Warning Background */
+  --orange-warning-bg: rgb(248, 194, 95);
+
   /* Component Types */
   --nav-bar: var(--dark-blue);
   --menu-break: var(--light-blue);
@@ -43,6 +46,9 @@
   --blue: rgb(19, 38, 145);
   --purple: rgb(83, 41, 95);
   --grey: rgb(81, 81, 87);
+
+  /* Shadow */
+  --shadow: 5px 5px 10px rgb(182, 182, 182);
 }
 
 /* Base Browser Reset */

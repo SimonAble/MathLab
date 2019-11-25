@@ -1,0 +1,19 @@
+{
+  "coreConcept": "Foundations",
+  "coreConceptIcon": "fas fa-square-root-alt mr-3",
+  "leftmenuitems" :
+  [
+    {
+      "sectionComplete" : false,
+      "itemText" : "Whole Numbers",
+      "itemActive" : true,
+      "itemOrder": 0
+    },
+    {
+      "sectionComplete" : false,
+      "itemText" : "Counting Numbers",
+      "itemActive" : false,
+      "itemOrder": 1
+    }
+  ]
+}

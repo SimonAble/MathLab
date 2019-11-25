@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { leftMenuItem, leftMenuItems } from './left-menu.model';
 import { NavigationService } from '../../shared/navigation.service';
 
@@ -10,24 +10,11 @@ import { NavigationService } from '../../shared/navigation.service';
 
 export class LeftMenuComponent implements OnInit {
   @Output() leftMenuToggled = new EventEmitter<boolean>();
+  @Input() leftMenuItems: leftMenuItems;
 
   public leftMenuOpen = true;
   public activeItem: number;
   public sectionComplete = true;
-
-  public leftMenuItems = new leftMenuItems(
-    'Foundations',
-    'fas fa-square-root-alt mr-3',
-    [
-      new leftMenuItem(0, 'Whole Numbers', true, false),
-      new leftMenuItem(1, 'Integers', false, true),
-      new leftMenuItem(2, 'Negative Numbers', true, false),
-      new leftMenuItem(3, 'Addition', false, false),
-      new leftMenuItem(4, 'Subtraction', false, false),
-      new leftMenuItem(5, 'Multiplication', true, false),
-      new leftMenuItem(6, 'Division', false, false),
-    ]
-  );
 
   constructor() { }
 
@@ -38,6 +25,7 @@ export class LeftMenuComponent implements OnInit {
   getActiveItem() {
     for (let i = 0; i < this.leftMenuItems.leftmenuitems.length; i++) {
       const cycledItem = this.leftMenuItems.leftmenuitems[i];
+      console.log(cycledItem);
       if (cycledItem.itemActive) {
         this.activeItem = cycledItem.itemOrder;
       }

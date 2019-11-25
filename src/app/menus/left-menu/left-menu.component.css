@@ -3,6 +3,8 @@
   width:100%;
   background-color: var(--main-background);
   /* border-right:4px solid var(--menu-break); */
+  border-top-right-radius: .2rem;
+  border-bottom-right-radius: .2rem;
 }
 
 .toggleButton {
@@ -60,8 +62,6 @@
   background-image: linear-gradient(to right, var(--dark-blue) , var(--light-blue));
   color: var(--star-white);
   border: none;
-  border-bottom: .5px solid var(--dark-grey);
-  border-top: .5px solid var(--dark-grey);
 }
 
 .activeItem{

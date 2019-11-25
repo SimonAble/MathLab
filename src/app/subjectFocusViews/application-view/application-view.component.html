@@ -1,11 +1,11 @@
 <div class="applicationViewContain">
     <div class="row concept w-100">
         <div class="col">
-            <h1 class="py-3 mb-2 conceptHead text-center mb-3">{{applicationModel.applicationHeading}}</h1>
+            <h1 class="py-3 mb-2 conceptHead text-center mb-3">{{applicationView.applicationHeading}}</h1>
         </div>
     </div>
     <div class="p-0 m-0 w-100 col-12" >
-        <div *ngFor="let application of applicationModel.applications" class="col-md-4 applicationContain m-0">
+        <div *ngFor="let application of applicationView.applications" class="col-md-4 applicationContain m-0">
           <div class="application h-100 w-100" (click)="openDialog(application.applicationId)">
             <h3 class="applicationText py-2 m-0">{{application.applicationText}}</h3>
             <img src="{{application.applicationBackground}}" alt="">

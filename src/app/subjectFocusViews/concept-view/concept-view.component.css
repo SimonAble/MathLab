@@ -11,11 +11,12 @@
 .conceptFormula{
   background-color: var(--dark-grey);
   width:94%;
-  border: 6px solid var(--light-grey);
+  border-radius: .2rem;
   height:300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: var(--shadow);
 }
 
 .formulaText{

@@ -29,6 +29,7 @@ import { DiscussionViewComponent } from './subjectFocusViews/discussion-view/dis
 import { ApplicationModalComponent } from './subjectFocusViews/application-view/application-modal/application-modal.component';
 import { DisabledSubjectComponent } from './subjectFocusViews/disabled-subject/disabled-subject.component';
 import { NavigationService } from './shared/navigation.service';
+import { TopicConstructorService } from './subject-focus/topic-constructor.service';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { NavigationService } from './shared/navigation.service';
     ApplicationModalComponent
   ],
   providers: [
-    NavigationService
+    NavigationService,
+    TopicConstructorService
   ],
   bootstrap: [AppComponent]
 })
