@@ -35,3 +35,14 @@
 .circle-contain {
   display: inline;
 }
+
+.paragraphImg {
+  width:80%;
+  margin:auto;
+  border-radius: .2rem;
+  box-shadow: var(--shadow);
+}
+
+img {
+  width:100%;
+}

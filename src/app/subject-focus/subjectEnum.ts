@@ -1,6 +1,8 @@
 export enum SubjectTypeCode {
-  'concept' = 1,
-  'history' = 2,
-  'application' = 3,
-  'practice' = 4
+  'Concept' = 1,
+  'History' = 2,
+  'Applications' = 3,
+  'Practice' = 4,
+  'Discussion' = 5,
+  'Resources' = 6
 }

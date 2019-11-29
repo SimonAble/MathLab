@@ -1,9 +1,11 @@
 export class leftMenuItems {
+  conceptId: number;
   coreConcept: string;
   coreConceptIcon: string;
   leftmenuitems: leftMenuItem[];
 
-  constructor(coreConcept: string, coreConceptIcon: string, leftmenuitems: leftMenuItem[]) {
+  constructor(conceptId: number, coreConcept: string, coreConceptIcon: string, leftmenuitems: leftMenuItem[]) {
+    this.conceptId = conceptId;
     this.coreConcept = coreConcept;
     this.leftmenuitems = leftmenuitems;
     this.coreConceptIcon = coreConceptIcon;

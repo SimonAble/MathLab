@@ -1,7 +1,9 @@
 export class HistoryViewModel {
+  historyHeader: string;
   historySections: HistorySection[];
 
-  constructor(historySections: HistorySection[]) {
+  constructor(historyHeader: string, historySections: HistorySection[]) {
+    this.historyHeader = historyHeader;
     this.historySections = historySections;
   }
 }
@@ -21,11 +23,13 @@ export class HistorySection {
 }
 
 export class SectionParagraph {
+  paragraphHead: string;
   paragraphText: string;
   paragraphImg: string;
   imgAlt: string;
 
-  constructor(paragraphText: string, paragraphImg?: string, imgAlt?: string) {
+  constructor( paragraphText: string, paragraphHead?: string, paragraphImg?: string, imgAlt?: string) {
+    this.paragraphHead = paragraphHead;
     this.paragraphText = paragraphText;
     this.paragraphImg = paragraphImg;
     this.imgAlt = imgAlt;

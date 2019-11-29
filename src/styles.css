@@ -77,13 +77,13 @@ h2 {
   font-weight: 400;
 }
 h3 {
-  color: var(--light-blue) ;
-  font-size: 32px !important;
+  color: var(--medium-purple) ;
+  font-size: 28px !important;
   font-weight: 400;
 }
 h4 {
-  color: var(--light-blue) ;
-  font-size: 32px !important;
+  color: var(--dark-blue) ;
+  font-size: 24px !important;
   font-weight: 400;
 }
 h5 {

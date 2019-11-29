@@ -5,15 +5,14 @@ import { HistoryViewModel } from '../subjectFocusViews/history-view/history-view
 import { PracticeViewModel } from '../subjectFocusViews/practice-view/practice-view-model.component';
 
 export class Topic {
-  topic: TopicComponentsModel;
+  topicModel: TopicComponentsModel;
 
-  constructor(topic: TopicComponentsModel) {
-    this.topic = topic;
+  constructor(topicModel: TopicComponentsModel) {
+    this.topicModel = topicModel;
   }
 }
 
 export class TopicComponentsModel {
-  leftMenu: leftMenuItems;
   concept: ConceptModel;
   history: HistoryViewModel;
   application: ApplicationViewModel;
@@ -21,8 +20,7 @@ export class TopicComponentsModel {
   discussion: any;
   resources: any;
 
-  constructor(leftMenu: leftMenuItems, concept: ConceptModel, history: HistoryViewModel, application: ApplicationViewModel, practice: PracticeViewModel, discussion?: any, resources?: any ) {
-    this.leftMenu = leftMenu;
+  constructor(concept: ConceptModel, history: HistoryViewModel, application: ApplicationViewModel, practice: PracticeViewModel, discussion?: any, resources?: any ) {
     this.concept = concept;
     this.history = history;
     this.application = application;

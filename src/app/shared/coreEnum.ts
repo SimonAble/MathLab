@@ -1,3 +1,3 @@
 export enum TopicListItems {
-  'Foundations' =  "Foundations"
+  'Foundations' =  0
 }

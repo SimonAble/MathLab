@@ -7,8 +7,10 @@
               <div><h2 class="text-center formulaText my-auto h-100">{{conceptView.conceptFormula}}</h2></div>
             </div>
             <div *ngFor="let paragraph of conceptView.conceptParagraphs">
-                <img *ngIf="paragraph.paragraphImg" src="paragraph.paragraphImg" alt="paragraph.paragraphAlt">
                 <p class="conceptExplanation p-5" [innerHTML]="paragraph.paragraphText"></p>
+                <div class="paragraphImg">
+                  <img *ngIf="paragraph.paragraphImg" src="{{paragraph.paragraphImg}}" alt="{{paragraph.paragraphImgAlt}}">
+                </div>
             </div>
         </div>
     </div>

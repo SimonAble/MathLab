@@ -1,21 +1,21 @@
 <div class="leftMenuContainer m-0 p-0">
   <div class="row w-100 pb-2 p-0 m-0 primaryConcept">
-    <div class="col-9 text-center mt-3">
-      <h2 class="nav-text"><i class="{{leftMenuItems.coreConceptIcon}} mr-3"></i>{{leftMenuItems.coreConcept}}</h2>
+    <div class="col-10 text-left pl-4 px-0 mt-3">
+      <h2 class="nav-text pt-1">{{leftMenuItems.coreConcept}}&nbsp;</h2>
     </div>
-    <div class="col-3 text-right mt-2 m-0 p-0">
-      <button (click)="toggleLeftMenu()" class="toggleButton"><i class="fas fa-angle-double-left toggle"></i></button>
+    <div class="col-2 text-left mt-2 mx-0 p-0">
+      <button (click)="toggleLeftMenu()" class="toggleButton m-0 px-0"><i class="fas fa-angle-double-left toggle pt-1"></i></button>
     </div>
     <div class="navItems w-100">
       <!--Left Menu Items-->
       <div *ngFor="let item of leftMenuItems.leftmenuitems">
           <div class="navItem align-center" [ngClass]="{activeItem: item.itemActive}" (click)="navItemClicked(item.itemOrder)">
             <div class="row p-0 m-0">
-                <div class="col-2 p-0 m-0">
+                <div class="col-1 p-0 m-0">
                   <span *ngIf="!item.sectionComplete"><i class="far fa-circle circleIcon"></i></span>
                   <span *ngIf="item.sectionComplete"><i class="far fa-check-circle circleIcon"></i></span>
                 </div>
-                <div class="col-10">
+                <div class="col-11">
                   {{item.itemText}}
                 </div>
             </div>

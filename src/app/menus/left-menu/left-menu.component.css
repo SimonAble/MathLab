@@ -12,6 +12,7 @@
   color: var( --medium-grey);
   background-color: var(--main-background);
   transition: .5s;
+  text-align: right;
 }
 
 .toggleButton:hover {
@@ -43,7 +44,7 @@
 }
 
 .navItems{
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .navItem {
@@ -51,7 +52,6 @@
   color: var(--dark-grey);
   font-size: 22px;
   padding: 16px 0px 16px 20px;
-  border-bottom: .5px solid var(--light-grey);
 }
 
 .circleIcon {
@@ -59,7 +59,7 @@
 }
 
 .navItem:hover {
-  background-image: linear-gradient(to right, var(--dark-blue) , var(--light-blue));
+  background-image: linear-gradient(to right, var(--purple-background) , var(--medium-purple));
   color: var(--star-white);
   border: none;
 }

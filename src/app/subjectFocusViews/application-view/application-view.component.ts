@@ -15,6 +15,7 @@ export class ApplicationViewComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+    console.log("Logging Application View: ", this.applicationView);
   }
 
   openDialog(applicationId): void {

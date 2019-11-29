@@ -1,4 +1,5 @@
 {
+  "conceptId": 0,
   "coreConcept": "Foundations",
   "coreConceptIcon": "fas fa-square-root-alt mr-3",
   "leftmenuitems" :
@@ -14,6 +15,36 @@
       "itemText" : "Counting Numbers",
       "itemActive" : false,
       "itemOrder": 1
+    },
+    {
+      "sectionComplete" : false,
+      "itemText" : "Integers",
+      "itemActive" : false,
+      "itemOrder": 2
+    },
+    {
+      "sectionComplete" : false,
+      "itemText" : "Adding",
+      "itemActive" : false,
+      "itemOrder": 3
+    },
+    {
+      "sectionComplete" : false,
+      "itemText" : "Subtracting",
+      "itemActive" : false,
+      "itemOrder": 4
+    },
+    {
+      "sectionComplete" : false,
+      "itemText" : "Multiplication",
+      "itemActive" : false,
+      "itemOrder": 5
+    },
+    {
+      "sectionComplete" : false,
+      "itemText" : "Division",
+      "itemActive" : false,
+      "itemOrder": 6
     }
   ]
 }
