@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
-import { NavigationService } from '../shared/navigation.service';
+import { Subjects } from './subject-selection.model';
+import { SubjectSelectionService } from './subject-selection.service';
 
 @Component({
   selector: 'app-subject-selection',
@@ -9,12 +10,14 @@ import { NavigationService } from '../shared/navigation.service';
 })
 export class SubjectSelectionComponent implements OnInit {
 
+  public subjects: Subjects;
+
   constructor(
-    private navigationService: NavigationService
-  ) {
-    this.navigationService.setLeftMenuVisibility(false);
-   }
+    public subjectSelectionService: SubjectSelectionService
+  ) {}
 
   ngOnInit() {
+    this.subjects = this.subjectSelectionService.getSubjectSelection();
+    console.log("Logging subjects", this.subjects);
   }
 }

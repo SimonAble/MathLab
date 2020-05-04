@@ -24,6 +24,7 @@
   border: 5px solid var(--light-grey);
   background: radial-gradient(var(--lighter-grey) 2px, transparent 3px);
   background-size : 25px 25px;
+  padding: 20px !important;
 }
 
 input[type=text] {

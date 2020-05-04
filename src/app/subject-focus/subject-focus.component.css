@@ -115,8 +115,38 @@ i {
 
 .leftMenuIcon:hover {
   box-shadow: none;
-  background-image: none;
   background-color: var(--active-green);
   box-shadow: 2px 1px 4px rgb(117, 117, 117);
   background-image: linear-gradient(to right, var(--purple-background) , var(--medium-purple));
+}
+
+.questionBar {
+  height:60px;
+  background-color: white;
+  border-radius: 4em;
+  border: 2px solid var(--medium-blue);
+  bottom: 100px;
+  margin:auto;
+}
+
+.arrowIcon {
+  font-size: 30px;
+  margin-top: 14px;
+}
+
+.arrowIcon:hover {
+  color: var(--medium-purple);
+}
+
+.itemIcon {
+  margin-top: 14px;
+  color: var(--medium-grey);
+}
+
+.itemIcon:hover {
+  color: var(--medium-purple);
+}
+
+.activeIcon {
+  color:green !important;
 }

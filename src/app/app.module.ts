@@ -30,6 +30,8 @@ import { ApplicationModalComponent } from './subjectFocusViews/application-view/
 import { DisabledSubjectComponent } from './subjectFocusViews/disabled-subject/disabled-subject.component';
 import { NavigationService } from './shared/navigation.service';
 import { TopicConstructorService } from './subject-focus/topic-constructor.service';
+import { SubjectSelectionService } from './subject-selection/subject-selection.service';
+import { FieldSelectionComponent } from './field-selection/field-selection.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { TopicConstructorService } from './subject-focus/topic-constructor.servi
     ResourcesViewComponent,
     DiscussionViewComponent,
     ApplicationModalComponent,
-    DisabledSubjectComponent
+    DisabledSubjectComponent,
+    FieldSelectionComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,8 @@ import { TopicConstructorService } from './subject-focus/topic-constructor.servi
   ],
   providers: [
     NavigationService,
-    TopicConstructorService
+    TopicConstructorService,
+    SubjectSelectionService
   ],
   bootstrap: [AppComponent]
 })

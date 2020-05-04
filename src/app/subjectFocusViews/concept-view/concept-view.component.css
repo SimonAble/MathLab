@@ -41,6 +41,7 @@
   margin:auto;
   border-radius: .2rem;
   box-shadow: var(--shadow);
+  border: 6px solid var(--medium-blue);
 }
 
 img {

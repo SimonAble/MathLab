@@ -1,0 +1,24 @@
+{
+  "subjectId" : 0,
+  "subjectName" : "Mathematics",
+  "subjects" : [
+    {
+      "subjectSelectorId": 0,
+      "subjectText": "Foundations",
+      "subjectIcon": "fas fa-divide",
+      "isDisabled" : false
+    },
+    {
+      "subjectSelectorId": 1,
+      "subjectText": "Algebra",
+      "subjectIcon": "fas fa-square-root-alt",
+      "isDisabled" : true
+    },
+    {
+      "subjectSelectorId": 2,
+      "subjectText": "Trigonometry",
+      "subjectIcon": "fas fa-superscript",
+      "isDisabled" : true
+    }
+  ]
+}

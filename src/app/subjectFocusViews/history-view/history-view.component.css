@@ -63,6 +63,7 @@
 .historyImg {
   width:80%;
   border-radius: 6px;
+  border: 6px solid var(--medium-blue);
   box-shadow: var(--shadow);
 }
 

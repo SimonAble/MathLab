@@ -2,7 +2,7 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { SubjectTypeCode } from './subjectEnum';
 import { SubjectTabModel, SubjectTabs } from './subjectTab.model';
 import { NavigationService } from '../shared/navigation.service';
-import { TopicComponentsModel } from './Topic.model';
+import { TopicComponentsModel } from './topics.model';
 import { leftMenuItems, leftMenuItem } from '../menus/left-menu/left-menu.model';
 import { ConceptModel, ConceptParagraph } from '../subjectFocusViews/concept-view/concept-view-model.component';
 import { HistoryViewModel, HistorySection, SectionParagraph } from '../subjectFocusViews/history-view/history-view-model.component';
@@ -32,10 +32,10 @@ export class SubjectFocusComponent implements OnInit {
 
   public subjectTabs = new SubjectTabs(
     [
-      new SubjectTabModel(0, true, false, 'Concept', 'far fa-lightbulb', 'firstTab', 5, 1),
+      new SubjectTabModel(0, false, false, 'Concept', 'far fa-lightbulb', 'firstTab', 5, 1),
       new SubjectTabModel(1, false, false, 'History', 'fas fa-hourglass-half', 'tab', 0, 2),
       new SubjectTabModel(2, false, false, 'Applications', 'fas fa-calculator', 'tab', 1, 3),
-      new SubjectTabModel(3, false, false, 'Practice', 'far fa-edit', 'tab', 2, 4),
+      new SubjectTabModel(3, true, false, 'Practice', 'far fa-edit', 'tab', 2, 4),
       new SubjectTabModel(4, false, true, 'Discussion', 'far fa-comments', 'tab', 3, 5),
       new SubjectTabModel(5, false, true, 'Resources', 'fas fa-book', 'lastTab', 4, 0)
     ]
@@ -48,11 +48,11 @@ export class SubjectFocusComponent implements OnInit {
   ngOnInit() {
     this.getActiveTab();
     this.getLeftMenuItems();
-    this.getTopicItems();
   }
 
   getLeftMenuItems() {
     this.leftMenuItems = this.topicConstructorService.getLeftMenuItems(TopicListItems.Foundations);
+    this.getTopicItems();
   }
 
   getTopicItems() {
